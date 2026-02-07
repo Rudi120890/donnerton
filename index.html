@@ -3,36 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AuraSound | 2025 Wireless Earbuds</title>
+    <title>AuraSound | Elite Audio Experience</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F5F5DC; color: #5D4037; }
-        .accent-brown { background-color: #A52A2A; }
-        .bg-beige-light { background-color: #D2B48C; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fdfaf5; color: #3d2b1f; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .hero-gradient { background: radial-gradient(circle at top right, #f3e5d8 0%, #fdfaf5 100%); }
+        .btn-premium { background: #2b1d12; transition: all 0.3s ease; }
+        .btn-premium:hover { background: #4a3221; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
     </style>
 </head>
-<body>
+<body class="hero-gradient min-h-screen">
 
-    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
-        <div class="text-2xl font-bold tracking-tighter">AURASOUND</div>
-        <button class="accent-brown text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition">Buy Now</button>
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto glass rounded-2xl px-8 py-4 flex justify-between items-center shadow-sm">
+            <div class="text-xl font-800 tracking-tighter uppercase">Aura<span class="text-amber-700">Sound</span></div>
+            <div class="hidden md:flex gap-8 text-sm font-semibold opacity-70">
+                <a href="#" class="hover:text-amber-700 transition">Design</a>
+                <a href="#" class="hover:text-amber-700 transition">Technology</a>
+                <a href="#" class="hover:text-amber-700 transition">Reviews</a>
+            </div>
+            <button class="btn-premium text-white px-5 py-2 rounded-xl text-sm font-bold">Pre-order</button>
+        </div>
     </nav>
 
-    <section class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
-        <div>
-            <span class="uppercase tracking-widest text-sm font-semibold opacity-70">2025 Edition | Bluetooth 5.4</span>
-            <h1 class="text-5xl md:text-7xl font-bold leading-tight mt-4">Sound in Harmony with Style.</h1>
-            <p class="text-lg mt-6 opacity-80 leading-relaxed">
-                Experience the new AuraSound Earbuds. Cutting-edge technology wrapped in a sophisticated sand-beige aesthetic. 50 hours of pure liberty.
-            </p>
-            <div class="mt-10">
-                <button class="accent-brown text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:scale-105 transition">Shop AuraSound — $49.99</button>
+    <section class="relative pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-widest">
+                    Coming Spring 2026
+                </div>
+                <h1 class="text-6xl md:text-8xl font-800 leading-[1.1] tracking-tight">
+                    Pure Sound. <br> <span class="text-amber-700/80">Raw Elegance.</span>
+                </h1>
+                <p class="text-xl opacity-70 leading-relaxed max-w-md">
+                    Crafted for the minimalists. AuraSound Pro combines desert-inspired aesthetics with industry-leading noise cancellation.
+                </p>
+                <div class="flex items-center gap-6">
+                    <button class="btn-premium text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl">
+                        Add to Cart — $49
+                    </button>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg">4.9/5</span>
+                        <span class="text-xs opacity-50 uppercase font-bold tracking-tighter">Verified Reviews</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="relative">
-            <img src="earbuds.jpg" alt="AuraSound Earbuds" class="relative z-10 rounded-3xl shadow-2xl w-full object-cover">
+
+            <div class="relative group">
+                <div class="absolute -inset-4 bg-amber-200/30 rounded-full blur-3xl group-hover:bg-amber-300/40 transition duration-1000"></div>
+                <div class="relative glass rounded-[40px] p-4 shadow-2xl overflow-hidden">
+                    <img src="earbuds.jpg" 
+                         onerror="this.src='https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&q=80&w=1000'" 
+                         alt="AuraSound Pro" 
+                         class="rounded-[32px] w-full h-[500px] object-cover hover:scale-105 transition duration-700">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="bg-
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="glass p-10 rounded-[32px] space-y-4 hover:shadow-xl transition">
+                <div class="w-12 h-12 bg-amber-700 text-white rounded-xl flex items-center justify-center text-2xl font-bold">50</div>
+                <h3 class="text-2xl font-bold">Hour Battery</h3>
+                <p class="opacity-60 leading-relaxed">Studio-grade sound from dawn till dusk, and through the night.</p>
+            </div>
+            <div class="glass p-10 rounded-[32px] space-y-4 hover:shadow-xl transition">
+                <div class="w-12 h-12 bg-amber-100 text-amber-900 rounded-xl flex items-center justify-center text-2xl">🌿</div>
+                <h3 class="text-2xl font-bold">Organic Fit</h3>
+                <p class="opacity-60 leading-relaxed">Bio-mimetic ear tips designed for zero-pressure listening.</p>
+            </div>
+            <div class="glass p-10 rounded-[32px] space-y-4 hover:shadow-xl transition">
+                <div class="w-12 h-12 bg-amber-100 text-amber-900 rounded-xl flex items-center justify-center text-2xl">⚡</div>
+                <h3 class="text-2xl font-bold">Hyper-Link</h3>
+                <p class="opacity-60 leading-relaxed">Bluetooth 5.4 with dual-device seamless switching.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-amber-200/30 text-center">
+        <p class="text-sm font-semibold opacity-30 uppercase tracking-[0.3em]">AuraSound — The Future of Audio</p>
+    </footer>
+
+</body>
+</html>
