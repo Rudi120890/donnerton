@@ -1,142 +1,140 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donerton W90 | Starry Night Black Edition</title>
+    <title>Donerton W90 | Premium Wireless Audio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ffffff; scroll-behavior: smooth; }
-        .text-gradient { background: linear-gradient(to right, #ffffff, #a1a1a1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .feature-card { background: #161616; border: 1px solid #262626; transition: all 0.3s ease; }
-        .feature-card:hover { border-color: #3b82f6; transform: translateY(-5px); }
-        .buy-button { background: linear-gradient(45deg, #3b82f6, #2563eb); transition: all 0.3s shadow; }
-        .buy-button:hover { box-shadow: 0 0 25px rgba(59, 130, 246, 0.5); }
-        .video-overlay { background: rgba(0,0,0,0.4); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FDFBF7; color: #433931; scroll-behavior: smooth; }
+        .bg-beige { background-color: #F5F0E8; }
+        .text-accent { color: #A67C52; }
+        .btn-premium { background-color: #433931; color: #FDFBF7; transition: all 0.3s ease; }
+        .btn-premium:hover { background-color: #5D5045; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .glass-nav { background: rgba(253, 251, 247, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(67, 57, 49, 0.05); }
+        .card { background: #FFFFFF; border: 1px solid rgba(67, 57, 49, 0.05); transition: all 0.4s ease; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.03); }
     </style>
 </head>
 <body>
 
-    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-800 tracking-tighter">DONERTON <span class="text-blue-500 underline">W90</span></div>
-            <div class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-semibold">
-                <a href="#features" class="hover:text-blue-500">Технологии</a>
-                <a href="#video" class="hover:text-blue-500">Лайфстайл</a>
-                <a href="#specs" class="hover:text-blue-500">Характеристики</a>
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-xl font-800 tracking-tighter uppercase italic">Donerton <span class="text-accent font-400">W90</span></div>
+            <div class="hidden md:flex gap-10 text-xs font-bold uppercase tracking-widest opacity-70">
+                <a href="#tech" class="hover:text-accent">Technology</a>
+                <a href="#lifestyle" class="hover:text-accent">Lifestyle</a>
+                <a href="#specs" class="hover:text-accent">Specs</a>
             </div>
-            <button class="buy-button text-white px-6 py-2 rounded-full font-bold text-sm">КУПИТЬ СЕЙЧАС</button>
+            <button class="btn-premium px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider">Buy Now — £9.99</button>
         </div>
     </nav>
 
-    <section class="pt-32 pb-20 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="text-blue-500 font-bold tracking-widest uppercase text-sm">Новинка 2025 года</span>
-                <h1 class="text-6xl md:text-8xl font-800 leading-tight">Starry Night <br> <span class="text-gradient">Black</span></h1>
-                <p class="text-gray-400 text-lg max-w-lg">
-                    Погрузитесь в звук с чипом Bluetooth 5.4 и Hi-Fi Stereo. 50 часов музыки и защита IP7 для самых интенсивных тренировок.
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-beige text-accent text-[10px] font-800 uppercase tracking-[0.2em]">
+                    New 2025 Edition
+                </div>
+                <h1 class="text-6xl md:text-8xl font-800 leading-[1.05] tracking-tight">
+                    Silence is <br><span class="text-accent">Beautiful.</span>
+                </h1>
+                <p class="text-xl opacity-60 leading-relaxed max-w-md">
+                    Experience the W90 Starry Night Black technology wrapped in a sophisticated warm aesthetic. Pure Hi-Fi sound for £9.99.
                 </p>
-                <div class="flex gap-4 pt-4">
-                    <button class="buy-button px-10 py-5 rounded-2xl font-800 text-xl shadow-lg">ЗАКАЗАТЬ — $49.99</button>
+                <div class="pt-4">
+                    <button class="btn-premium px-12 py-5 rounded-2xl font-800 text-lg shadow-xl">Shop Now — £9.99</button>
                 </div>
             </div>
             <div class="relative">
-                <img src="main-case.jpg" alt="Donerton W90" class="w-full drop-shadow-[0_0_50px_rgba(59,130,246,0.2)]">
+                <div class="absolute -inset-10 bg-beige rounded-full blur-3xl opacity-50"></div>
+                <img src="main.jpg" alt="Donerton W90 Case" class="relative z-10 w-full rounded-[40px] shadow-2xl">
             </div>
         </div>
     </section>
 
-    <section id="video" class="relative h-[60vh] overflow-hidden">
-        <div class="absolute inset-0 video-overlay z-10 flex items-center justify-center">
-            <h2 class="text-4xl md:text-6xl font-800 text-center px-6">Созданы для ритма мегаполиса</h2>
+    <section id="lifestyle" class="py-10 px-6">
+        <div class="max-w-7xl mx-auto relative h-[70vh] rounded-[40px] overflow-hidden shadow-2xl">
+            <div class="absolute inset-0 bg-black/20 z-10 flex items-center justify-center text-center px-4">
+                <h2 class="text-white text-4xl md:text-6xl font-800 tracking-tight">Rhythm of the City</h2>
+            </div>
+            <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                <source src="https://cdn.pixabay.com/video/2021/04/12/70796-538313032_tiny.mp4" type="video/mp4">
+            </video>
         </div>
-        <video autoplay muted loop class="w-full h-full object-cover">
-            <source src="https://cdn.pixabay.com/video/2021/04/12/70796-538313032_tiny.mp4" type="video/mp4">
-        </video>
     </section>
 
-    <section id="features" class="py-24 px-6 bg-[#050505]">
+    <section id="tech" class="py-24 px-6 bg-[#FAF8F5]">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="feature-card p-8 rounded-3xl">
-                    <img src="bluetooth.jpg" class="rounded-xl mb-6 opacity-80" alt="BT 5.4">
-                    <h3 class="text-2xl font-bold mb-2">Bluetooth 5.4</h3>
-                    <p class="text-gray-500">На 150% быстрее передача данных и на 50% меньше потребление энергии.</p>
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-800">Advanced Engineering</h2>
+                <p class="opacity-50 max-w-xl mx-auto text-lg">Powered by the 2025 Bluetooth 5.4 chip for seamless connection and deep bass.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-10 rounded-[35px]">
+                    <img src="chip.jpg" class="rounded-2xl mb-8 w-full h-48 object-cover" alt="Bluetooth 5.4">
+                    <h3 class="text-2xl font-bold mb-4">Bluetooth 5.4</h3>
+                    <p class="opacity-60 leading-relaxed text-sm">150% faster data transmission and 50% lower power consumption for a stable connection.</p>
                 </div>
-                <div class="feature-card p-8 rounded-3xl border-blue-500/30">
-                    <img src="driver.jpg" class="rounded-xl mb-6" alt="Hi-Fi Driver">
-                    <h3 class="text-2xl font-bold mb-2">13mm Speaker</h3>
-                    <p class="text-gray-500">Мощный бас и кристальные высокие частоты. Почувствуйте каждую ноту.</p>
+                <div class="card p-10 rounded-[35px] border-accent/20">
+                    <img src="audio.jpg" class="rounded-2xl mb-8 w-full h-48 object-cover" alt="Hi-Fi Sound">
+                    <h3 class="text-2xl font-bold mb-4">Hi-Fi Stereo</h3>
+                    <p class="opacity-60 leading-relaxed text-sm">13mm dynamic speakers deliver powerful bass and stunning treble for immersive audio.</p>
                 </div>
-                <div class="feature-card p-8 rounded-3xl">
-                    <img src="waterproof.jpg" class="rounded-xl mb-6 opacity-80" alt="IP7">
-                    <h3 class="text-2xl font-bold mb-2">IP7 Waterproof</h3>
-                    <p class="text-gray-500">Полная защита от пота и дождя. Ваши наушники проживут дольше.</p>
+                <div class="card p-10 rounded-[35px]">
+                    <img src="comfort.jpg" class="rounded-2xl mb-8 w-full h-48 object-cover" alt="IP7 Waterproof">
+                    <h3 class="text-2xl font-bold mb-4">IP7 Waterproof</h3>
+                    <p class="opacity-60 leading-relaxed text-sm">Complete protection from sweat and rain. Perfect for sports and outdoor travel.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="relative h-[60vh] overflow-hidden">
-        <div class="absolute inset-0 video-overlay z-10 flex items-center justify-center">
-            <div class="text-center space-y-4">
-                <h2 class="text-4xl md:text-6xl font-800">4 ENC Микрофона</h2>
-                <p class="text-xl text-blue-400">Чистый голос даже при шуме ветра на побережье</p>
+    <section class="py-10 px-6">
+        <div class="max-w-7xl mx-auto relative h-[70vh] rounded-[40px] overflow-hidden shadow-2xl">
+            <div class="absolute inset-0 bg-black/10 z-10 flex flex-col items-center justify-center text-center px-4">
+                <h2 class="text-white text-4xl md:text-6xl font-800 tracking-tight">4 ENC Noise Cancelling Mics</h2>
+                <p class="text-white/80 text-xl font-semibold mt-4 italic">Crystal clear calls by the ocean</p>
             </div>
+            <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                <source src="https://cdn.pixabay.com/video/2016/09/13/5108-182312676_tiny.mp4" type="video/mp4">
+            </video>
         </div>
-        <video autoplay muted loop class="w-full h-full object-cover">
-            <source src="https://cdn.pixabay.com/video/2016/09/13/5108-182312676_tiny.mp4" type="video/mp4">
-        </video>
     </section>
 
     <section id="specs" class="py-24 px-6">
-        <div class="max-w-5xl mx-auto bg-[#111] rounded-[40px] p-12 overflow-hidden relative">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h2 class="text-4xl font-bold mb-8">Техническое совершенство</h2>
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <span class="text-blue-500 text-2xl">✓</span>
-                            <div>
-                                <strong class="block text-lg">Dual LED Display</strong>
-                                <span class="text-gray-500">Точный контроль заряда каждого наушника и кейса.</span>
-                            </div>
+                    <h2 class="text-4xl font-800 mb-8">Technical Mastery</h2>
+                    <ul class="space-y-8">
+                        <li class="flex gap-5">
+                            <span class="text-accent text-xl">●</span>
+                            <p class="text-sm opacity-70 leading-relaxed"><strong>50H Total Playtime:</strong> 8 hours on a single charge plus 42 additional hours from the charging case.</p>
                         </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-blue-500 text-2xl">✓</span>
-                            <div>
-                                <strong class="block text-lg">50H Playtime</strong>
-                                <span class="text-gray-500">8 часов от одного заряда + 42 часа от кейса. Быстрая зарядка Type-C.</span>
-                            </div>
+                        <li class="flex gap-5">
+                            <span class="text-accent text-xl">●</span>
+                            <p class="text-sm opacity-70 leading-relaxed"><strong>Dual LED Display:</strong> Real-time power tracking for both earbuds and the portable case.</p>
                         </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-blue-500 text-2xl">✓</span>
-                            <div>
-                                <strong class="block text-lg">Smart Touch Control</strong>
-                                <span class="text-gray-500">Управление громкостью, звонками и ассистентом в одно касание.</span>
-                            </div>
+                        <li class="flex gap-5">
+                            <span class="text-accent text-xl">●</span>
+                            <p class="text-sm opacity-70 leading-relaxed"><strong>Smart Touch Control:</strong> High-sensitivity touch technology for volume, calls, and voice assistants.</p>
                         </li>
                     </ul>
                 </div>
-                <div class="bg-blue-600/10 p-6 rounded-3xl border border-blue-500/20">
-                    <h4 class="font-bold mb-4 uppercase text-sm tracking-widest">Комплектация:</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Наушники W90, Зарядный кейс, Кабель Type-C, 3 пары амбушюр (S/M/L), Инструкция.
-                    </p>
-                    <div class="mt-8 p-6 bg-black rounded-2xl text-center">
-                        <div class="text-3xl font-800">$49.99</div>
-                        <div class="text-green-500 text-sm font-bold mt-1">В наличии</div>
-                    </div>
+                <div class="bg-beige p-10 rounded-[40px] text-center space-y-6">
+                    <p class="text-xs font-bold uppercase tracking-widest opacity-40">Ready to Ship</p>
+                    <h4 class="text-5xl font-800 tracking-tighter">£9.99</h4>
+                    <p class="text-sm opacity-60">Includes 3 pairs of ear tips (S/M/L), Type-C cable, and charging case.</p>
+                    <button class="btn-premium w-full py-5 rounded-2xl font-bold text-lg">Purchase Now</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-white/5 text-center">
-        <div class="text-sm opacity-30 uppercase tracking-[0.5em] mb-4">Donerton Audio Systems 2026</div>
-        <p class="text-xs text-gray-600">Designed for Starry Night Black Edition</p>
+    <footer class="py-20 text-center border-t border-beige">
+        <div class="text-[10px] font-800 uppercase tracking-[0.5em] opacity-30">Donerton Audio © 2026</div>
     </footer>
 
 </body>
